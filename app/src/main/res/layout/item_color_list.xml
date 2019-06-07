@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.suzdalnitsky.betterimagepicker.SquareByWidthLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</me.suzdalnitsky.betterimagepicker.SquareByWidthLayout>

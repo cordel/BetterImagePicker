@@ -124,7 +124,8 @@ public class ToolbarBottomSheetDialog extends AppCompatDialog {
     }
 
     private View wrapInBottomSheet(int layoutResId, View view, ViewGroup.LayoutParams params) {
-        FrameLayout container = (FrameLayout) View.inflate(getContext(), R.layout.layout_frame, null);
+        FrameLayout container = new FrameLayout(getContext());
+        container.setFitsSystemWindows(true);
         if (layoutResId != 0 && view == null) {
             view = getLayoutInflater().inflate(layoutResId, container, false);
         }

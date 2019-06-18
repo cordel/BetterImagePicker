@@ -23,9 +23,6 @@ import androidx.core.view.AccessibilityDelegateCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 
-/**
- * Base class for {@link android.app.Dialog}s styled as a bottom sheet.
- */
 public class ToolbarBottomSheetDialog extends AppCompatDialog {
 
     private BottomSheetBehavior<FrameLayout> behavior;
@@ -73,13 +70,11 @@ public class ToolbarBottomSheetDialog extends AppCompatDialog {
     @Override
     public void setContentView(View view) {
         throw new IllegalArgumentException("Not supported");
-//        super.setContentView(wrapInBottomSheet(0, view, null));
     }
 
     @Override
     public void setContentView(View view, ViewGroup.LayoutParams params) {
         throw new IllegalArgumentException("Not supported");
-//        super.setContentView(wrapInBottomSheet(0, view, params));
     }
 
     @Override

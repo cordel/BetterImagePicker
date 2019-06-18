@@ -38,7 +38,7 @@
         android:elevation="0dp"
         android:orientation="vertical"
         android:paddingBottom="?attr/actionBarSize"
-        app:layout_behavior="@string/bottom_sheet_behavior">
+        app:layout_behavior=".LockableBottomSheetBehavior">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list"
